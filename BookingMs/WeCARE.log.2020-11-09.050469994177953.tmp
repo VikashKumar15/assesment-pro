@@ -1,0 +1,762 @@
+2020-11-09 06:37:30.741  INFO 3793 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 3793 (/home/vikash/WeCare/WeCare/target/classes started by vikash in /home/vikash/WeCare/WeCare)
+2020-11-09 06:37:30.780  INFO 3793 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 06:37:32.896  INFO 3793 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 06:37:33.063  INFO 3793 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 146ms. Found 3 JPA repository interfaces.
+2020-11-09 06:37:34.335  INFO 3793 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8040 (http)
+2020-11-09 06:37:34.358  INFO 3793 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 06:37:34.359  INFO 3793 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 06:37:34.737  INFO 3793 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 06:37:34.741  INFO 3793 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3727 ms
+2020-11-09 06:37:35.199  INFO 3793 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 06:37:35.296  INFO 3793 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 06:37:35.433  INFO 3793 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 06:37:35.558  WARN 3793 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 06:37:35.759  INFO 3793 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 06:37:36.087  INFO 3793 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 06:37:36.555  INFO 3793 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8040 (http) with context path '/wecare'
+2020-11-09 06:37:36.566  INFO 3793 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 06:37:37.112  INFO 3793 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 06:37:37.179  INFO 3793 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 06:37:40.279  INFO 3793 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 06:37:40.291  INFO 3793 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 06:37:41.238  INFO 3793 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 06:37:41.255  INFO 3793 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 11.624 seconds (JVM running for 12.701)
+2020-11-09 06:43:17.697  INFO 3793 --- [http-nio-8040-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 06:43:17.698  INFO 3793 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 06:43:17.734  INFO 3793 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2020-11-09 06:43:17.900  INFO 3793 --- [http-nio-8040-exec-1] c.lex.restcontoller.CoahRestController   : Inside getCoachProfile() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 06:43:52.422  INFO 3793 --- [http-nio-8040-exec-5] c.lex.restcontoller.CoahRestController   : Inside getCoachProfile() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 06:49:20.698  INFO 3793 --- [http-nio-8040-exec-5] c.lex.restcontoller.CoahRestController   : Inside getCoachProfile() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 06:51:44.734  INFO 3793 --- [http-nio-8040-exec-9] c.lex.restcontoller.CoahRestController   : Inside loginCoach() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 06:51:44.735  INFO 3793 --- [http-nio-8040-exec-9] com.lex.service.CoachService             : Inside loginCoach() method of class com.lex.service.CoachService
+2020-11-09 06:51:44.764 ERROR 3793 --- [http-nio-8040-exec-9] com.lex.service.CoachService             : Error: coach.not.found
+2020-11-09 06:52:25.032  INFO 3793 --- [http-nio-8040-exec-10] c.lex.restcontoller.CoahRestController   : Inside showAllCoaches() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 06:52:25.033  INFO 3793 --- [http-nio-8040-exec-10] com.lex.service.CoachService             : Inside showAllCoaches() method of class com.lex.service.CoachService
+2020-11-09 06:54:41.213  INFO 3793 --- [http-nio-8040-exec-4] c.lex.restcontoller.CoahRestController   : Inside getCoachProfile() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 06:54:47.777  INFO 3793 --- [http-nio-8040-exec-5] c.lex.restcontoller.CoahRestController   : Inside loginCoach() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 06:54:47.780  INFO 3793 --- [http-nio-8040-exec-5] com.lex.service.CoachService             : Inside loginCoach() method of class com.lex.service.CoachService
+2020-11-09 06:54:47.785 ERROR 3793 --- [http-nio-8040-exec-5] com.lex.service.CoachService             : Error: coach.not.found
+2020-11-09 06:55:42.764  INFO 3793 --- [http-nio-8040-exec-7] c.lex.restcontoller.CoahRestController   : Inside showMySchedule() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 06:55:42.765  INFO 3793 --- [http-nio-8040-exec-7] com.lex.service.BookService              : Inside findBookingByCoachId() method of class com.lex.service.BookService
+2020-11-09 07:02:51.367  INFO 3793 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:02:51.371  INFO 3793 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:02:51.372  INFO 3793 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 07:02:51.411  INFO 3793 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 07:02:59.690  INFO 4460 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 4460 (/home/vikash/WeCare/WeCare/target/classes started by vikash in /home/vikash/WeCare/WeCare)
+2020-11-09 07:02:59.696  INFO 4460 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 07:03:01.648  INFO 4460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 07:03:01.795  INFO 4460 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 130ms. Found 3 JPA repository interfaces.
+2020-11-09 07:03:03.067  INFO 4460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8040 (http)
+2020-11-09 07:03:03.092  INFO 4460 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 07:03:03.092  INFO 4460 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 07:03:03.265  INFO 4460 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 07:03:03.265  INFO 4460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3464 ms
+2020-11-09 07:03:03.787  INFO 4460 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:03:03.888  INFO 4460 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 07:03:04.006  INFO 4460 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 07:03:04.107  WARN 4460 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 07:03:04.267  INFO 4460 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 07:03:04.566  INFO 4460 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 07:03:05.203  INFO 4460 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8040 (http) with context path '/wecare'
+2020-11-09 07:03:05.208  INFO 4460 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 07:03:05.605  INFO 4460 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 07:03:05.670  INFO 4460 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 07:03:07.302  INFO 4460 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 07:03:07.319  INFO 4460 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:03:08.240  INFO 4460 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 07:03:08.254  INFO 4460 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 9.417 seconds (JVM running for 10.425)
+2020-11-09 07:03:42.346  INFO 4460 --- [http-nio-8040-exec-2] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 07:03:42.346  INFO 4460 --- [http-nio-8040-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 07:03:42.363  INFO 4460 --- [http-nio-8040-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-11-09 07:03:42.449  INFO 4460 --- [http-nio-8040-exec-2] c.lex.restcontoller.CoahRestController   : Inside showMySchedule() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:03:42.450  INFO 4460 --- [http-nio-8040-exec-2] com.lex.service.BookService              : Inside findBookingByCoachId() method of class com.lex.service.BookService
+2020-11-09 07:04:00.458  INFO 4460 --- [http-nio-8040-exec-3] c.lex.restcontoller.CoahRestController   : Inside getCoachProfile() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:04:08.656  INFO 4460 --- [http-nio-8040-exec-4] c.lex.restcontoller.CoahRestController   : Inside getCoachProfile() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:04:15.018  INFO 4460 --- [http-nio-8040-exec-5] c.lex.restcontoller.CoahRestController   : Inside loginCoach() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:10:32.034  INFO 4460 --- [http-nio-8040-exec-9] c.lex.restcontoller.CoahRestController   : Inside getCoachProfile() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:10:49.398  INFO 4460 --- [http-nio-8040-exec-1] c.lex.restcontoller.CoahRestController   : Inside showAllCoaches() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:10:49.398  INFO 4460 --- [http-nio-8040-exec-1] com.lex.service.CoachService             : Inside showAllCoaches() method of class com.lex.service.CoachService
+2020-11-09 07:16:27.070  INFO 4460 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:16:27.074  INFO 4460 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:16:27.075  INFO 4460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 07:16:27.091  INFO 4460 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 07:17:06.447  INFO 4731 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 4731 (/home/vikash/WeCare/WeCare/target/classes started by vikash in /home/vikash/WeCare/WeCare)
+2020-11-09 07:17:06.452  INFO 4731 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 07:17:08.293  INFO 4731 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 07:17:08.445  INFO 4731 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 3 JPA repository interfaces.
+2020-11-09 07:17:09.546  INFO 4731 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8040 (http)
+2020-11-09 07:17:09.564  INFO 4731 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 07:17:09.565  INFO 4731 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 07:17:09.709  INFO 4731 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 07:17:09.709  INFO 4731 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3084 ms
+2020-11-09 07:17:10.058  INFO 4731 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:17:10.155  INFO 4731 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 07:17:10.263  INFO 4731 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 07:17:10.328  WARN 4731 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 07:17:10.551  INFO 4731 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 07:17:10.806  INFO 4731 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 07:17:11.462  INFO 4731 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8040 (http) with context path '/wecare'
+2020-11-09 07:17:11.466  INFO 4731 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 07:17:11.674  INFO 4731 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 07:17:11.734  INFO 4731 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 07:17:13.319  INFO 4731 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 07:17:13.336  INFO 4731 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:17:14.100  INFO 4731 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 07:17:14.114  INFO 4731 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 8.53 seconds (JVM running for 9.258)
+2020-11-09 07:17:33.314  INFO 4731 --- [http-nio-8040-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 07:17:33.315  INFO 4731 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 07:17:33.331  INFO 4731 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-11-09 07:17:33.377  INFO 4731 --- [http-nio-8040-exec-1] c.lex.restcontoller.CoahRestController   : Inside showAllCoaches() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:17:33.377  INFO 4731 --- [http-nio-8040-exec-1] com.lex.service.CoachService             : Inside showAllCoaches() method of class com.lex.service.CoachService
+2020-11-09 07:17:56.402  INFO 4731 --- [http-nio-8040-exec-3] c.lex.restcontoller.CoahRestController   : Inside getCoachProfile() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:18:16.384  INFO 4731 --- [http-nio-8040-exec-4] c.lex.restcontoller.CoahRestController   : Inside loginCoach() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:19:18.537  INFO 4731 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:19:18.540  INFO 4731 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:19:18.541  INFO 4731 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 07:19:18.569  INFO 4731 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 07:19:26.698  INFO 4870 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 4870 (/home/vikash/WeCare/WeCare/target/classes started by vikash in /home/vikash/WeCare/WeCare)
+2020-11-09 07:19:26.704  INFO 4870 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 07:19:28.594  INFO 4870 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 07:19:28.748  INFO 4870 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134ms. Found 3 JPA repository interfaces.
+2020-11-09 07:19:29.905  INFO 4870 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8040 (http)
+2020-11-09 07:19:29.923  INFO 4870 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 07:19:29.924  INFO 4870 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 07:19:30.115  INFO 4870 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 07:19:30.115  INFO 4870 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3275 ms
+2020-11-09 07:19:30.445  INFO 4870 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:19:30.546  INFO 4870 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 07:19:30.695  INFO 4870 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 07:19:30.738  WARN 4870 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 07:19:30.953  INFO 4870 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 07:19:31.268  INFO 4870 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 07:19:31.671  INFO 4870 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8040 (http) with context path '/wecare'
+2020-11-09 07:19:31.675  INFO 4870 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 07:19:32.109  INFO 4870 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 07:19:32.151  INFO 4870 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 07:19:33.777  INFO 4870 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 07:19:33.792  INFO 4870 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:19:34.714  INFO 4870 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 07:19:34.733  INFO 4870 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 8.915 seconds (JVM running for 9.748)
+2020-11-09 07:19:46.993  INFO 4870 --- [http-nio-8040-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 07:19:46.993  INFO 4870 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 07:19:47.018  INFO 4870 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 25 ms
+2020-11-09 07:19:47.216  INFO 4870 --- [http-nio-8040-exec-1] c.lex.restcontoller.CoahRestController   : Inside loginCoach() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:19:47.219  INFO 4870 --- [http-nio-8040-exec-1] com.lex.service.CoachService             : null
+2020-11-09 07:20:18.200  INFO 4870 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:20:18.207  INFO 4870 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:20:18.209  INFO 4870 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 07:20:18.227  INFO 4870 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 07:20:42.562  INFO 4970 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 4970 (/home/vikash/WeCare/WeCare/target/classes started by vikash in /home/vikash/WeCare/WeCare)
+2020-11-09 07:20:42.569  INFO 4970 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 07:20:44.448  INFO 4970 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 07:20:44.597  INFO 4970 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 132ms. Found 3 JPA repository interfaces.
+2020-11-09 07:20:45.805  INFO 4970 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8040 (http)
+2020-11-09 07:20:45.827  INFO 4970 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 07:20:45.827  INFO 4970 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 07:20:46.004  INFO 4970 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 07:20:46.005  INFO 4970 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3337 ms
+2020-11-09 07:20:46.271  INFO 4970 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:20:46.392  INFO 4970 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 07:20:46.553  WARN 4970 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 07:20:46.583  INFO 4970 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 07:20:46.891  INFO 4970 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 07:20:47.236  INFO 4970 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 07:20:47.498  INFO 4970 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8040 (http) with context path '/wecare'
+2020-11-09 07:20:47.504  INFO 4970 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 07:20:48.008  INFO 4970 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 07:20:48.071  INFO 4970 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 07:20:49.555  INFO 4970 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 07:20:49.617  INFO 4970 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:20:50.384  INFO 4970 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 07:20:50.404  INFO 4970 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 8.668 seconds (JVM running for 9.31)
+2020-11-09 07:20:54.654  INFO 4970 --- [http-nio-8040-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 07:20:54.659  INFO 4970 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 07:20:54.683  INFO 4970 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 23 ms
+2020-11-09 07:20:54.841  INFO 4970 --- [http-nio-8040-exec-1] c.lex.restcontoller.CoahRestController   : Inside loginCoach() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:20:54.843  INFO 4970 --- [http-nio-8040-exec-1] com.lex.service.CoachService             : this is loging id=null
+2020-11-09 07:25:36.240  INFO 4970 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:25:36.245  INFO 4970 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:25:36.248  INFO 4970 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 07:25:36.319  INFO 4970 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 07:27:06.706  INFO 5197 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 5197 (/home/vikash/WeCare/WeCare/target/classes started by vikash in /home/vikash/WeCare/WeCare)
+2020-11-09 07:27:06.711  INFO 5197 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 07:27:08.550  INFO 5197 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 07:27:08.706  INFO 5197 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138ms. Found 3 JPA repository interfaces.
+2020-11-09 07:27:09.937  INFO 5197 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8040 (http)
+2020-11-09 07:27:09.962  INFO 5197 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 07:27:09.963  INFO 5197 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 07:27:10.136  INFO 5197 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 07:27:10.137  INFO 5197 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3305 ms
+2020-11-09 07:27:10.487  INFO 5197 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:27:10.583  INFO 5197 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 07:27:10.702  INFO 5197 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 07:27:10.804  WARN 5197 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 07:27:11.001  INFO 5197 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 07:27:11.327  INFO 5197 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 07:27:11.713  INFO 5197 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8040 (http) with context path '/wecare'
+2020-11-09 07:27:11.716  INFO 5197 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 07:27:12.167  INFO 5197 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 07:27:12.227  INFO 5197 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 07:27:13.790  INFO 5197 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 07:27:13.805  INFO 5197 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:27:14.739  INFO 5197 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 07:27:14.757  INFO 5197 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 8.949 seconds (JVM running for 9.65)
+2020-11-09 07:27:27.681  INFO 5197 --- [http-nio-8040-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 07:27:27.681  INFO 5197 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 07:27:27.703  INFO 5197 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-11-09 07:27:27.898  INFO 5197 --- [http-nio-8040-exec-1] com.lex.service.CoachService             : this is loging id=null
+2020-11-09 07:29:54.153  INFO 5197 --- [http-nio-8040-exec-6] c.lex.restcontoller.CoahRestController   : Inside showAllCoaches() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:29:54.154  INFO 5197 --- [http-nio-8040-exec-6] com.lex.service.CoachService             : Inside showAllCoaches() method of class com.lex.service.CoachService
+2020-11-09 07:36:50.318  INFO 5197 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:36:50.322  INFO 5197 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:36:50.323  INFO 5197 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 07:36:50.351  INFO 5197 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 07:54:46.091  INFO 5952 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 5952 (/home/vikash/WeCare/WeCare/target/classes started by vikash in /home/vikash/WeCare/WeCare)
+2020-11-09 07:54:46.095  INFO 5952 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 07:54:47.996  INFO 5952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 07:54:48.144  INFO 5952 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133ms. Found 3 JPA repository interfaces.
+2020-11-09 07:54:49.318  INFO 5952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8040 (http)
+2020-11-09 07:54:49.337  INFO 5952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 07:54:49.338  INFO 5952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 07:54:49.546  INFO 5952 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 07:54:49.546  INFO 5952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3302 ms
+2020-11-09 07:54:50.057  INFO 5952 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:54:50.150  INFO 5952 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 07:54:50.268  INFO 5952 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 07:54:50.456  WARN 5952 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 07:54:50.666  INFO 5952 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 07:54:51.203  INFO 5952 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 07:54:52.056  INFO 5952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8040 (http) with context path '/wecare'
+2020-11-09 07:54:52.063  INFO 5952 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 07:54:52.441  INFO 5952 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 07:54:52.500  INFO 5952 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 07:54:54.371  INFO 5952 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 07:54:54.385  INFO 5952 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:54:55.471  INFO 5952 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 07:54:55.506  INFO 5952 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 10.308 seconds (JVM running for 10.996)
+2020-11-09 07:55:20.738  INFO 5952 --- [http-nio-8040-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 07:55:20.739  INFO 5952 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 07:55:20.756  INFO 5952 --- [http-nio-8040-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-11-09 07:55:20.960  INFO 5952 --- [http-nio-8040-exec-1] c.lex.restcontoller.CoahRestController   : Inside loginCoach() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 07:55:20.962  INFO 5952 --- [http-nio-8040-exec-1] com.lex.service.CoachService             : this is loging id=LC24320201946101
+2020-11-09 07:58:02.835  INFO 5952 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 07:58:02.839  INFO 5952 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 07:58:02.840  INFO 5952 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 07:58:02.862  INFO 5952 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 09:13:04.680  INFO 4284 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 4284 (/home/vikash/WeCare/1101480_WeCare/target/classes started by vikash in /home/vikash/WeCare/1101480_WeCare)
+2020-11-09 09:13:04.733  INFO 4284 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 09:13:08.557  INFO 4284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 09:13:08.798  INFO 4284 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 223ms. Found 3 JPA repository interfaces.
+2020-11-09 09:13:10.984  INFO 4284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-11-09 09:13:11.010  INFO 4284 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 09:13:11.011  INFO 4284 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 09:13:11.271  INFO 4284 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 09:13:11.272  INFO 4284 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6235 ms
+2020-11-09 09:13:11.801  INFO 4284 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 09:13:11.941  INFO 4284 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 09:13:12.146  INFO 4284 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 09:13:12.245  WARN 4284 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 09:13:12.610  INFO 4284 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 09:13:12.956  INFO 4284 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 09:13:13.738  INFO 4284 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/wecare'
+2020-11-09 09:13:13.762  INFO 4284 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 09:13:14.249  INFO 4284 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 09:13:14.314  INFO 4284 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 09:13:16.470  INFO 4284 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 09:13:16.487  INFO 4284 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 09:13:17.532  INFO 4284 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 09:13:17.559  INFO 4284 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 14.031 seconds (JVM running for 15.396)
+2020-11-09 09:13:28.918  INFO 4284 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 09:13:28.927  INFO 4284 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 09:13:28.928  INFO 4284 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 09:13:28.958  INFO 4284 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 10:24:51.420  INFO 6281 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 6281 (/home/vikash/WeCare/1101480_WeCare/target/classes started by vikash in /home/vikash/WeCare/1101480_WeCare)
+2020-11-09 10:24:51.426  INFO 6281 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 10:24:53.570  INFO 6281 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 10:24:53.729  INFO 6281 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 134ms. Found 3 JPA repository interfaces.
+2020-11-09 10:24:55.458  INFO 6281 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-11-09 10:24:55.504  INFO 6281 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 10:24:55.505  INFO 6281 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 10:24:55.679  INFO 6281 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 10:24:55.680  INFO 6281 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4097 ms
+2020-11-09 10:24:56.000  INFO 6281 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 10:24:56.106  INFO 6281 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 10:24:56.230  INFO 6281 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 10:24:56.403  WARN 6281 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 10:24:56.548  INFO 6281 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 10:24:56.886  INFO 6281 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 10:24:57.498  INFO 6281 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/wecare'
+2020-11-09 10:24:57.508  INFO 6281 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 10:24:57.957  INFO 6281 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 10:24:58.013  INFO 6281 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 10:24:59.400  INFO 6281 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 10:24:59.413  INFO 6281 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 10:25:00.313  INFO 6281 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 10:25:00.331  INFO 6281 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 9.93 seconds (JVM running for 10.988)
+2020-11-09 10:29:52.735  INFO 6281 --- [http-nio-8090-exec-3] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 10:29:52.736  INFO 6281 --- [http-nio-8090-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 10:29:52.753  INFO 6281 --- [http-nio-8090-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-11-09 10:30:30.388  INFO 6281 --- [http-nio-8090-exec-2] c.lex.restcontoller.UserRestController   : Inside getUserProfile() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:30:30.389  INFO 6281 --- [http-nio-8090-exec-2] com.lex.service.UserService              : Inside getUserProfile() method of class com.lex.service.UserService
+2020-11-09 10:30:41.866  INFO 6281 --- [http-nio-8090-exec-4] c.lex.restcontoller.UserRestController   : Inside getUserProfile() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:30:41.866  INFO 6281 --- [http-nio-8090-exec-4] com.lex.service.UserService              : Inside getUserProfile() method of class com.lex.service.UserService
+2020-11-09 10:30:47.386  INFO 6281 --- [http-nio-8090-exec-5] c.lex.restcontoller.UserRestController   : Inside getUserProfile() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:30:47.387  INFO 6281 --- [http-nio-8090-exec-5] com.lex.service.UserService              : Inside getUserProfile() method of class com.lex.service.UserService
+2020-11-09 10:32:01.821  INFO 6281 --- [http-nio-8090-exec-9] c.lex.restcontoller.UserRestController   : Inside getUserProfile() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:32:01.822  INFO 6281 --- [http-nio-8090-exec-9] com.lex.service.UserService              : Inside getUserProfile() method of class com.lex.service.UserService
+2020-11-09 10:32:16.356  INFO 6281 --- [http-nio-8090-exec-10] c.lex.restcontoller.UserRestController   : Inside getUserProfile() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:32:16.357  INFO 6281 --- [http-nio-8090-exec-10] com.lex.service.UserService              : Inside getUserProfile() method of class com.lex.service.UserService
+2020-11-09 10:34:52.574  INFO 6281 --- [http-nio-8090-exec-5] c.lex.restcontoller.UserRestController   : Inside getUserProfile() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:34:52.574  INFO 6281 --- [http-nio-8090-exec-5] com.lex.service.UserService              : Inside getUserProfile() method of class com.lex.service.UserService
+2020-11-09 10:39:32.068  INFO 6281 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 10:39:32.088  INFO 6281 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 10:39:32.089  INFO 6281 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 10:39:32.138  INFO 6281 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 10:39:38.499  INFO 6843 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 6843 (/home/vikash/WeCare/1101480_WeCare/target/classes started by vikash in /home/vikash/WeCare/1101480_WeCare)
+2020-11-09 10:39:38.519  INFO 6843 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 10:39:40.663  INFO 6843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 10:39:40.848  INFO 6843 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167ms. Found 3 JPA repository interfaces.
+2020-11-09 10:39:42.392  INFO 6843 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-11-09 10:39:42.425  INFO 6843 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 10:39:42.426  INFO 6843 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 10:39:42.637  INFO 6843 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 10:39:42.638  INFO 6843 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3956 ms
+2020-11-09 10:39:43.161  INFO 6843 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 10:39:43.332  INFO 6843 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 10:39:43.576  INFO 6843 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 10:39:43.851  WARN 6843 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 10:39:44.109  INFO 6843 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 10:39:44.727  INFO 6843 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 10:39:45.561  INFO 6843 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/wecare'
+2020-11-09 10:39:45.570  INFO 6843 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 10:39:46.101  INFO 6843 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 10:39:46.168  INFO 6843 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 10:39:48.276  INFO 6843 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 10:39:48.297  INFO 6843 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 10:39:49.782  INFO 6843 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 10:39:49.803  INFO 6843 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 12.44 seconds (JVM running for 13.478)
+2020-11-09 10:40:03.579  INFO 6843 --- [http-nio-8090-exec-2] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 10:40:03.581  INFO 6843 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 10:40:03.597  INFO 6843 --- [http-nio-8090-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-11-09 10:40:03.993  INFO 6843 --- [http-nio-8090-exec-2] c.lex.restcontoller.UserRestController   : Inside createUser() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:40:03.994  INFO 6843 --- [http-nio-8090-exec-2] com.lex.service.UserService              : Inside createUser() method of class com.lex.service.UserService
+2020-11-09 10:40:04.290  INFO 6843 --- [http-nio-8090-exec-2] com.lex.service.UserService              : UserID: U911202010401001 created
+2020-11-09 10:40:04.291  INFO 6843 --- [http-nio-8090-exec-2] c.lex.restcontoller.UserRestController   : Success: UserId U911202010401001 added
+2020-11-09 10:40:28.233  INFO 6843 --- [http-nio-8090-exec-3] c.lex.restcontoller.UserRestController   : Inside getUserProfile() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:40:28.233  INFO 6843 --- [http-nio-8090-exec-3] com.lex.service.UserService              : Inside getUserProfile() method of class com.lex.service.UserService
+2020-11-09 10:40:44.997  INFO 6843 --- [http-nio-8090-exec-4] c.lex.restcontoller.UserRestController   : Inside getUserProfile() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:40:44.998  INFO 6843 --- [http-nio-8090-exec-4] com.lex.service.UserService              : Inside getUserProfile() method of class com.lex.service.UserService
+2020-11-09 10:40:51.827  INFO 6843 --- [http-nio-8090-exec-5] c.lex.restcontoller.UserRestController   : Inside getUserProfile() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:40:51.827  INFO 6843 --- [http-nio-8090-exec-5] com.lex.service.UserService              : Inside getUserProfile() method of class com.lex.service.UserService
+2020-11-09 10:42:10.069  INFO 6843 --- [http-nio-8090-exec-8] c.lex.restcontoller.UserRestController   : Inside createUser() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:42:10.070  INFO 6843 --- [http-nio-8090-exec-8] com.lex.service.UserService              : Inside createUser() method of class com.lex.service.UserService
+2020-11-09 10:42:10.181  INFO 6843 --- [http-nio-8090-exec-8] com.lex.service.UserService              : UserID: U911202010421002 created
+2020-11-09 10:42:10.182  INFO 6843 --- [http-nio-8090-exec-8] c.lex.restcontoller.UserRestController   : Success: UserId U911202010421002 added
+2020-11-09 10:43:08.984  INFO 6843 --- [http-nio-8090-exec-9] c.lex.restcontoller.UserRestController   : Inside createUser() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:43:08.985  INFO 6843 --- [http-nio-8090-exec-9] com.lex.service.UserService              : Inside createUser() method of class com.lex.service.UserService
+2020-11-09 10:43:09.066  INFO 6843 --- [http-nio-8090-exec-9] com.lex.service.UserService              : UserID: U911202010431003 created
+2020-11-09 10:43:09.067  INFO 6843 --- [http-nio-8090-exec-9] c.lex.restcontoller.UserRestController   : Success: UserId U911202010431003 added
+2020-11-09 10:43:54.066  INFO 6843 --- [http-nio-8090-exec-10] c.lex.restcontoller.UserRestController   : Inside createUser() method of class com.lex.restcontoller.UserRestController
+2020-11-09 10:43:54.067  INFO 6843 --- [http-nio-8090-exec-10] com.lex.service.UserService              : Inside createUser() method of class com.lex.service.UserService
+2020-11-09 10:43:54.236  INFO 6843 --- [http-nio-8090-exec-10] com.lex.service.UserService              : UserID: U911202010431004 created
+2020-11-09 10:43:54.237  INFO 6843 --- [http-nio-8090-exec-10] c.lex.restcontoller.UserRestController   : Success: UserId U911202010431004 added
+2020-11-09 10:48:06.571  INFO 6843 --- [http-nio-8090-exec-3] c.lex.restcontoller.CoahRestController   : Inside showAllCoaches() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 10:48:06.572  INFO 6843 --- [http-nio-8090-exec-3] com.lex.service.CoachService             : Inside showAllCoaches() method of class com.lex.service.CoachService
+2020-11-09 10:48:26.043  INFO 6843 --- [http-nio-8090-exec-4] c.lex.restcontoller.CoahRestController   : Inside getCoachProfile() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 10:48:47.820  INFO 6843 --- [http-nio-8090-exec-5] c.lex.restcontoller.CoahRestController   : Inside showMySchedule() method of class com.lex.restcontoller.CoahRestController
+2020-11-09 10:48:47.821  INFO 6843 --- [http-nio-8090-exec-5] com.lex.service.BookService              : Inside findBookingByCoachId() method of class com.lex.service.BookService
+2020-11-09 11:02:18.906  INFO 6843 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 11:02:18.930  INFO 6843 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 11:02:18.932  INFO 6843 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 11:02:18.983  INFO 6843 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 18:26:02.341  INFO 23734 --- [main] com.lex.WeCareApplication                : Starting WeCareApplication on vikash-Inspiron-3542 with PID 23734 (/home/vikash/WeCareMicroservices/1101480_WeCare/target/classes started by vikash in /home/vikash/WeCareMicroservices/1101480_WeCare)
+2020-11-09 18:26:02.351  INFO 23734 --- [main] com.lex.WeCareApplication                : No active profile set, falling back to default profiles: default
+2020-11-09 18:26:05.147  INFO 23734 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 18:26:05.405  INFO 23734 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 230ms. Found 3 JPA repository interfaces.
+2020-11-09 18:26:07.225  INFO 23734 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8090 (http)
+2020-11-09 18:26:07.250  INFO 23734 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 18:26:07.251  INFO 23734 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 18:26:07.444  INFO 23734 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 18:26:07.445  INFO 23734 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4954 ms
+2020-11-09 18:26:08.069  INFO 23734 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 18:26:08.362  INFO 23734 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 18:26:08.840  WARN 23734 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 18:26:08.968  INFO 23734 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 18:26:09.891  INFO 23734 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 18:26:10.539  INFO 23734 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 18:26:10.921  INFO 23734 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8090 (http) with context path '/wecare'
+2020-11-09 18:26:10.926  INFO 23734 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 18:26:12.565  INFO 23734 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 18:26:12.970  INFO 23734 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 18:26:16.385  INFO 23734 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 18:26:16.460  INFO 23734 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 18:26:17.558  INFO 23734 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 18:26:17.599  INFO 23734 --- [main] com.lex.WeCareApplication                : Started WeCareApplication in 16.147 seconds (JVM running for 16.97)
+2020-11-09 18:26:27.263  INFO 23734 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 18:26:27.270  INFO 23734 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 18:26:27.273  INFO 23734 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 18:26:27.347  INFO 23734 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 20:17:18.478  INFO 28257 --- [main] com.infy.BookMs.WeCareApplication        : Starting WeCareApplication on vikash-Inspiron-3542 with PID 28257 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 20:17:18.484  INFO 28257 --- [main] com.infy.BookMs.WeCareApplication        : No active profile set, falling back to default profiles: default
+2020-11-09 20:17:20.621  INFO 28257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 20:17:20.758  INFO 28257 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116ms. Found 1 JPA repository interfaces.
+2020-11-09 20:17:22.020  INFO 28257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 20:17:22.045  INFO 28257 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 20:17:22.046  INFO 28257 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 20:17:22.262  INFO 28257 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 20:17:22.263  INFO 28257 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3653 ms
+2020-11-09 20:17:22.597  INFO 28257 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 20:17:22.701  INFO 28257 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 20:17:22.834  INFO 28257 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 20:17:22.869  WARN 28257 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 20:17:23.160  INFO 28257 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 20:17:23.578  INFO 28257 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 20:17:24.061  INFO 28257 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 20:17:24.065  INFO 28257 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 20:17:24.594  INFO 28257 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 20:17:24.656  INFO 28257 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 20:17:26.744  INFO 28257 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 20:17:26.755  INFO 28257 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 20:17:27.383  INFO 28257 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 20:17:27.396  INFO 28257 --- [main] com.infy.BookMs.WeCareApplication        : Started WeCareApplication in 9.97 seconds (JVM running for 10.751)
+2020-11-09 20:17:43.102  INFO 28257 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 20:17:43.106  INFO 28257 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 20:17:43.110  INFO 28257 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 20:17:43.143  INFO 28257 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 20:18:52.660  INFO 28360 --- [main] com.infy.BookMs.WeCareApplication        : Starting WeCareApplication on vikash-Inspiron-3542 with PID 28360 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 20:18:52.667  INFO 28360 --- [main] com.infy.BookMs.WeCareApplication        : No active profile set, falling back to default profiles: default
+2020-11-09 20:18:54.569  INFO 28360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 20:18:54.682  INFO 28360 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99ms. Found 1 JPA repository interfaces.
+2020-11-09 20:18:55.865  INFO 28360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 20:18:55.890  INFO 28360 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 20:18:55.891  INFO 28360 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 20:18:56.099  INFO 28360 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 20:18:56.100  INFO 28360 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3319 ms
+2020-11-09 20:18:56.419  INFO 28360 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 20:18:56.528  INFO 28360 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 20:18:56.645  INFO 28360 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 20:18:56.665  WARN 28360 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 20:18:56.928  INFO 28360 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 20:18:57.258  INFO 28360 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 20:18:57.790  INFO 28360 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 20:18:57.794  INFO 28360 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 20:18:58.271  INFO 28360 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 20:18:58.334  INFO 28360 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 20:18:59.640  INFO 28360 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 20:18:59.656  INFO 28360 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 20:19:00.336  INFO 28360 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 20:19:00.351  INFO 28360 --- [main] com.infy.BookMs.WeCareApplication        : Started WeCareApplication in 8.527 seconds (JVM running for 9.202)
+2020-11-09 20:19:16.885  INFO 28360 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 20:19:16.889  INFO 28360 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 20:19:16.895  INFO 28360 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 20:19:16.914  INFO 28360 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 20:20:58.938  INFO 28485 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 28485 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 20:20:58.946  INFO 28485 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 20:21:00.778  INFO 28485 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 20:21:00.896  INFO 28485 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 1 JPA repository interfaces.
+2020-11-09 20:21:02.150  INFO 28485 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 20:21:02.168  INFO 28485 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 20:21:02.169  INFO 28485 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 20:21:02.358  INFO 28485 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 20:21:02.358  INFO 28485 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3291 ms
+2020-11-09 20:21:02.682  INFO 28485 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 20:21:02.815  INFO 28485 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 20:21:02.905  WARN 28485 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 20:21:02.939  INFO 28485 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 20:21:03.218  INFO 28485 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 20:21:03.524  INFO 28485 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 20:21:04.102  INFO 28485 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 20:21:04.116  INFO 28485 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 20:21:04.495  INFO 28485 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 20:21:04.557  INFO 28485 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 20:21:05.834  INFO 28485 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 20:21:05.849  INFO 28485 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 20:21:06.579  INFO 28485 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 20:21:06.594  INFO 28485 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 8.526 seconds (JVM running for 9.199)
+2020-11-09 20:21:13.495  INFO 28485 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 20:21:13.499  INFO 28485 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 20:21:13.500  INFO 28485 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 20:21:13.525  INFO 28485 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 22:12:16.267  INFO 29769 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 29769 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 22:12:16.274  INFO 29769 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 22:12:18.957  INFO 29769 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 22:12:19.155  INFO 29769 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176ms. Found 1 JPA repository interfaces.
+2020-11-09 22:12:20.920  INFO 29769 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 22:12:20.947  INFO 29769 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 22:12:20.948  INFO 29769 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 22:12:21.142  INFO 29769 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 22:12:21.143  INFO 29769 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4694 ms
+2020-11-09 22:12:21.557  INFO 29769 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:12:21.720  INFO 29769 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 22:12:21.845  INFO 29769 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 22:12:21.914  WARN 29769 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 22:12:22.381  INFO 29769 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 22:12:22.880  INFO 29769 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 22:12:23.516  INFO 29769 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 22:12:23.527  INFO 29769 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 22:12:24.184  INFO 29769 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 22:12:24.251  INFO 29769 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 22:12:26.076  INFO 29769 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 22:12:26.180  INFO 29769 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:12:27.216  INFO 29769 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 22:12:27.238  INFO 29769 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 12.033 seconds (JVM running for 12.887)
+2020-11-09 22:26:53.760  INFO 29769 --- [http-nio-8001-exec-4] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 22:26:53.761  INFO 29769 --- [http-nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 22:26:53.778  INFO 29769 --- [http-nio-8001-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-11-09 22:26:53.854  INFO 29769 --- [http-nio-8001-exec-4] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService
+2020-11-09 22:29:46.069  INFO 29769 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:29:46.073  INFO 29769 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:29:46.074  INFO 29769 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 22:29:46.112  INFO 29769 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 22:32:31.481  INFO 30093 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 30093 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 22:32:31.490  INFO 30093 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 22:32:33.236  INFO 30093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 22:32:33.382  INFO 30093 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 127ms. Found 1 JPA repository interfaces.
+2020-11-09 22:32:34.641  INFO 30093 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 22:32:34.664  INFO 30093 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 22:32:34.665  INFO 30093 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 22:32:34.832  INFO 30093 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 22:32:34.832  INFO 30093 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3169 ms
+2020-11-09 22:32:35.196  INFO 30093 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:32:35.339  INFO 30093 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 22:32:35.586  INFO 30093 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 22:32:35.591  WARN 30093 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 22:32:36.128  INFO 30093 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 22:32:36.467  INFO 30093 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 22:32:36.940  INFO 30093 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 22:32:36.945  INFO 30093 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 22:32:37.522  INFO 30093 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 22:32:37.587  INFO 30093 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 22:32:38.841  INFO 30093 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 22:32:38.856  INFO 30093 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:32:39.733  INFO 30093 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 22:32:39.756  INFO 30093 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 9.188 seconds (JVM running for 9.853)
+2020-11-09 22:32:54.832  INFO 30093 --- [http-nio-8001-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 22:32:54.832  INFO 30093 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 22:32:54.844  INFO 30093 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2020-11-09 22:32:54.918  INFO 30093 --- [http-nio-8001-exec-1] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService
+2020-11-09 22:41:50.397  INFO 30093 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:41:50.400  INFO 30093 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:41:50.401  INFO 30093 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 22:41:50.415  INFO 30093 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 22:43:15.073  INFO 30407 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 30407 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 22:43:15.080  INFO 30407 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 22:43:16.834  INFO 30407 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 22:43:16.951  INFO 30407 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 98ms. Found 1 JPA repository interfaces.
+2020-11-09 22:43:18.319  INFO 30407 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 22:43:18.344  INFO 30407 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 22:43:18.345  INFO 30407 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 22:43:18.546  INFO 30407 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 22:43:18.547  INFO 30407 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3292 ms
+2020-11-09 22:43:18.885  INFO 30407 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:43:18.999  INFO 30407 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 22:43:19.204  INFO 30407 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 22:43:19.219  WARN 30407 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 22:43:19.708  INFO 30407 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 22:43:20.023  INFO 30407 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 22:43:20.478  INFO 30407 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 22:43:20.485  INFO 30407 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 22:43:21.081  INFO 30407 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 22:43:21.144  INFO 30407 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 22:43:22.720  INFO 30407 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 22:43:22.735  INFO 30407 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:43:23.571  INFO 30407 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 22:43:23.590  INFO 30407 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 9.534 seconds (JVM running for 10.345)
+2020-11-09 22:43:36.932  INFO 30407 --- [http-nio-8001-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 22:43:36.933  INFO 30407 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 22:43:36.950  INFO 30407 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-11-09 22:43:37.023  INFO 30407 --- [http-nio-8001-exec-1] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService
+2020-11-09 22:44:54.639  INFO 30407 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:44:54.649  INFO 30407 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:44:54.650  INFO 30407 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 22:44:54.704  INFO 30407 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 22:44:59.501  INFO 30521 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 30521 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 22:44:59.509  INFO 30521 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 22:45:01.380  INFO 30521 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 22:45:01.517  INFO 30521 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 1 JPA repository interfaces.
+2020-11-09 22:45:02.746  INFO 30521 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 22:45:02.764  INFO 30521 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 22:45:02.765  INFO 30521 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 22:45:02.955  INFO 30521 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 22:45:02.955  INFO 30521 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3231 ms
+2020-11-09 22:45:03.319  INFO 30521 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:45:03.450  INFO 30521 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 22:45:03.598  WARN 30521 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 22:45:03.641  INFO 30521 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 22:45:04.020  INFO 30521 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 22:45:04.354  INFO 30521 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 22:45:04.779  INFO 30521 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 22:45:04.790  INFO 30521 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 22:45:05.232  INFO 30521 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 22:45:05.292  INFO 30521 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 22:45:06.639  INFO 30521 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 22:45:06.654  INFO 30521 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:45:07.506  INFO 30521 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 22:45:07.523  INFO 30521 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 9.221 seconds (JVM running for 9.957)
+2020-11-09 22:45:19.313  INFO 30521 --- [http-nio-8001-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 22:45:19.314  INFO 30521 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 22:45:19.329  INFO 30521 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-11-09 22:45:19.402  INFO 30521 --- [http-nio-8001-exec-1] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id is  U8320200441001
+2020-11-09 22:46:10.253  INFO 30521 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:46:10.262  INFO 30521 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:46:10.263  INFO 30521 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 22:46:10.296  INFO 30521 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 22:46:14.700  INFO 30623 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 30623 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 22:46:14.708  INFO 30623 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 22:46:16.498  INFO 30623 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 22:46:16.634  INFO 30623 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 119ms. Found 1 JPA repository interfaces.
+2020-11-09 22:46:17.945  INFO 30623 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 22:46:17.970  INFO 30623 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 22:46:17.971  INFO 30623 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 22:46:18.186  INFO 30623 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 22:46:18.187  INFO 30623 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3324 ms
+2020-11-09 22:46:18.476  INFO 30623 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:46:18.619  INFO 30623 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 22:46:18.702  WARN 30623 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 22:46:18.845  INFO 30623 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 22:46:19.162  INFO 30623 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 22:46:19.533  INFO 30623 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 22:46:19.927  INFO 30623 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 22:46:19.932  INFO 30623 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 22:46:20.594  INFO 30623 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 22:46:20.657  INFO 30623 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 22:46:22.022  INFO 30623 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 22:46:22.036  INFO 30623 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:46:22.847  INFO 30623 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 22:46:22.869  INFO 30623 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 9.156 seconds (JVM running for 9.889)
+2020-11-09 22:46:29.500  INFO 30623 --- [http-nio-8001-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 22:46:29.501  INFO 30623 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 22:46:29.516  INFO 30623 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-11-09 22:46:29.595  INFO 30623 --- [http-nio-8001-exec-1] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id is U8320200441001tttt
+2020-11-09 22:46:48.596  INFO 30623 --- [http-nio-8001-exec-3] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU8320200441001tttt
+2020-11-09 22:47:26.351  INFO 30623 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:47:26.355  INFO 30623 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:47:26.357  INFO 30623 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 22:47:26.370  INFO 30623 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 22:47:31.330  INFO 30722 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 30722 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 22:47:31.349  INFO 30722 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 22:47:33.381  INFO 30722 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 22:47:33.504  INFO 30722 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106ms. Found 1 JPA repository interfaces.
+2020-11-09 22:47:34.852  INFO 30722 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 22:47:34.878  INFO 30722 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 22:47:34.879  INFO 30722 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 22:47:35.111  INFO 30722 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 22:47:35.112  INFO 30722 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3619 ms
+2020-11-09 22:47:35.469  INFO 30722 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 22:47:35.561  INFO 30722 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 22:47:35.704  INFO 30722 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 22:47:35.805  WARN 30722 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 22:47:36.272  INFO 30722 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 22:47:36.683  INFO 30722 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 22:47:37.161  INFO 30722 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 22:47:37.177  INFO 30722 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 22:47:37.832  INFO 30722 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 22:47:37.896  INFO 30722 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 22:47:39.246  INFO 30722 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 22:47:39.260  INFO 30722 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 22:47:40.001  INFO 30722 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 22:47:40.022  INFO 30722 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 9.594 seconds (JVM running for 10.322)
+2020-11-09 22:47:42.356  INFO 30722 --- [http-nio-8001-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 22:47:42.357  INFO 30722 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 22:47:42.373  INFO 30722 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-11-09 22:47:42.483  INFO 30722 --- [http-nio-8001-exec-1] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU8320200441001tttt
+2020-11-09 23:00:11.978  INFO 30722 --- [http-nio-8001-exec-3] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt
+2020-11-09 23:05:42.720  INFO 30722 --- [http-nio-8001-exec-7] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt
+2020-11-09 23:07:47.861  INFO 30722 --- [http-nio-8001-exec-9] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt
+2020-11-09 23:22:57.215  INFO 30722 --- [http-nio-8001-exec-1] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt
+2020-11-09 23:23:37.729  INFO 30722 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 23:23:37.733  INFO 30722 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 23:23:37.733  INFO 30722 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 23:23:37.761  INFO 30722 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 23:24:02.253  INFO 31753 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 31753 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 23:24:02.259  INFO 31753 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 23:24:04.524  INFO 31753 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 23:24:04.647  INFO 31753 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 105ms. Found 1 JPA repository interfaces.
+2020-11-09 23:24:05.830  INFO 31753 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 23:24:05.854  INFO 31753 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 23:24:05.855  INFO 31753 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 23:24:06.059  INFO 31753 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 23:24:06.060  INFO 31753 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3616 ms
+2020-11-09 23:24:06.484  INFO 31753 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 23:24:06.617  INFO 31753 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 23:24:06.796  INFO 31753 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 23:24:06.852  WARN 31753 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 23:24:07.236  INFO 31753 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 23:24:07.649  INFO 31753 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 23:24:08.269  INFO 31753 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 23:24:08.273  INFO 31753 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 23:24:08.629  INFO 31753 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 23:24:08.698  INFO 31753 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 23:24:10.379  INFO 31753 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 23:24:10.394  INFO 31753 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 23:24:11.576  INFO 31753 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 23:24:11.599  INFO 31753 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 10.404 seconds (JVM running for 11.339)
+2020-11-09 23:24:48.148  INFO 31753 --- [http-nio-8001-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 23:24:48.149  INFO 31753 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 23:24:48.178  INFO 31753 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 29 ms
+2020-11-09 23:24:48.289  INFO 31753 --- [http-nio-8001-exec-1] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt
+2020-11-09 23:29:49.374  INFO 31753 --- [http-nio-8001-exec-3] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt
+2020-11-09 23:31:36.705  INFO 31753 --- [http-nio-8001-exec-4] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt
+2020-11-09 23:36:10.704  INFO 31753 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 23:36:10.758  INFO 31753 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 23:36:10.759  INFO 31753 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 23:36:10.783  INFO 31753 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 23:36:26.238  INFO 32291 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 32291 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 23:36:26.244  INFO 32291 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 23:36:29.272  INFO 32291 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 23:36:29.459  INFO 32291 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 166ms. Found 1 JPA repository interfaces.
+2020-11-09 23:36:30.851  INFO 32291 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 23:36:30.879  INFO 32291 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 23:36:30.880  INFO 32291 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 23:36:31.144  INFO 32291 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 23:36:31.145  INFO 32291 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4548 ms
+2020-11-09 23:36:31.484  INFO 32291 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 23:36:31.629  INFO 32291 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 23:36:31.795  WARN 32291 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 23:36:31.822  INFO 32291 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 23:36:32.383  INFO 32291 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 23:36:32.878  INFO 32291 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 23:36:33.286  INFO 32291 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 23:36:33.290  INFO 32291 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 23:36:34.018  INFO 32291 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 23:36:34.070  INFO 32291 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 23:36:35.744  INFO 32291 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 23:36:35.759  INFO 32291 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 23:36:36.648  INFO 32291 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 23:36:36.671  INFO 32291 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 12.774 seconds (JVM running for 16.123)
+2020-11-09 23:38:47.082  INFO 32291 --- [http-nio-8001-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 23:38:47.083  INFO 32291 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 23:38:47.100  INFO 32291 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2020-11-09 23:38:47.173  INFO 32291 --- [http-nio-8001-exec-1] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt
+2020-11-09 23:38:56.296  INFO 32291 --- [http-nio-8001-exec-2] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt
+2020-11-09 23:46:17.935  INFO 32291 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 23:46:17.941  INFO 32291 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-09 23:46:17.941  INFO 32291 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-11-09 23:46:17.963  INFO 32291 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-11-09 23:47:04.503  INFO 32721 --- [main] com.infy.BookMs.BookinMsApplication      : Starting BookinMsApplication on vikash-Inspiron-3542 with PID 32721 (/home/vikash/WeCareMicroservices/BookingMs/target/classes started by vikash in /home/vikash/WeCareMicroservices/BookingMs)
+2020-11-09 23:47:04.509  INFO 32721 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-09 23:47:06.263  INFO 32721 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-09 23:47:06.406  INFO 32721 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 123ms. Found 1 JPA repository interfaces.
+2020-11-09 23:47:07.727  INFO 32721 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8001 (http)
+2020-11-09 23:47:07.756  INFO 32721 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-09 23:47:07.757  INFO 32721 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-09 23:47:07.973  INFO 32721 --- [main] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring embedded WebApplicationContext
+2020-11-09 23:47:07.974  INFO 32721 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3340 ms
+2020-11-09 23:47:08.355  INFO 32721 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-09 23:47:08.519  INFO 32721 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-09 23:47:08.664  WARN 32721 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-09 23:47:08.706  INFO 32721 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-09 23:47:09.265  INFO 32721 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-09 23:47:09.693  INFO 32721 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-09 23:47:10.118  INFO 32721 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8001 (http) with context path '/wecare'
+2020-11-09 23:47:10.124  INFO 32721 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-09 23:47:10.915  INFO 32721 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-09 23:47:11.028  INFO 32721 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-09 23:47:12.392  INFO 32721 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-09 23:47:12.410  INFO 32721 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-09 23:47:13.435  INFO 32721 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-09 23:47:13.455  INFO 32721 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 9.819 seconds (JVM running for 10.499)
+2020-11-09 23:47:57.202  INFO 32721 --- [http-nio-8001-exec-1] o.a.c.c.C.[.[localhost].[/wecare]        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-09 23:47:57.204  INFO 32721 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-11-09 23:47:57.219  INFO 32721 --- [http-nio-8001-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2020-11-09 23:47:57.290  INFO 32721 --- [http-nio-8001-exec-1] com.infy.BookMs.service.BookService      : Inside findBookingByUserId() method of class com.infy.BookMs.service.BookService and id isU911202022551001tttt

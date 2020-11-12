@@ -1,0 +1,59 @@
+2020-11-12 08:27:40.190  INFO 5160 --- [main] c.c.c.ConfigServicePropertySourceLocator : Fetching config from server at : http://localhost:1111
+2020-11-12 08:27:42.662  INFO 5160 --- [main] c.c.c.ConfigServicePropertySourceLocator : Located environment: name=BookingMs, profiles=[default], label=null, version=89883e5ee784bffc09ee45973dc5cb4d37caaa54, state=null
+2020-11-12 08:27:42.664  INFO 5160 --- [main] b.c.PropertySourceBootstrapConfiguration : Located property source: CompositePropertySource {name='configService', propertySources=[MapPropertySource {name='configClient'}, MapPropertySource {name='https://github.com/VikashKumar15/WecareMs.git/BookingMs.properties'}, MapPropertySource {name='https://github.com/VikashKumar15/WecareMs.git/application.properties'}]}
+2020-11-12 08:27:43.067  INFO 5160 --- [main] com.infy.BookMs.BookinMsApplication      : No active profile set, falling back to default profiles: default
+2020-11-12 08:27:48.382  INFO 5160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-12 08:27:49.024  INFO 5160 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 552ms. Found 1 JPA repository interfaces.
+2020-11-12 08:27:51.030  INFO 5160 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a848d90d-c9fe-3051-a31e-09be1bc34c35
+2020-11-12 08:27:51.635  INFO 5160 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6a87f299] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-12 08:27:52.331  INFO 5160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8002 (http)
+2020-11-12 08:27:52.359  INFO 5160 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-11-12 08:27:52.360  INFO 5160 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-12 08:27:53.078  INFO 5160 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-11-12 08:27:53.078  INFO 5160 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9825 ms
+2020-11-12 08:27:54.236  INFO 5160 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-12 08:27:54.661  INFO 5160 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-12 08:27:54.805  WARN 5160 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-12 08:27:54.809  INFO 5160 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-12 08:27:54.833  WARN 5160 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2020-11-12 08:27:54.842  INFO 5160 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-12 08:27:55.056  INFO 5160 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-12 08:27:55.256  WARN 5160 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-11-12 08:27:55.808  INFO 5160 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-12 08:27:56.369  INFO 5160 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-11-12 08:27:56.439  WARN 5160 --- [task-1] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-11-12 08:27:58.640  INFO 5160 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-11-12 08:27:58.652  INFO 5160 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2020-11-12 08:27:58.742  INFO 5160 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2020-11-12 08:27:59.217  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2020-11-12 08:28:00.201  INFO 5160 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2020-11-12 08:28:00.229  INFO 5160 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2020-11-12 08:28:01.823  INFO 5160 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2020-11-12 08:28:01.830  INFO 5160 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2020-11-12 08:28:03.081  INFO 5160 --- [main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-12 08:28:03.266  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2020-11-12 08:28:03.267  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2020-11-12 08:28:03.267  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2020-11-12 08:28:03.267  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2020-11-12 08:28:03.268  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2020-11-12 08:28:03.268  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2020-11-12 08:28:03.268  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2020-11-12 08:28:03.916  INFO 5160 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-12 08:28:03.983  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2020-11-12 08:28:03.988  INFO 5160 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-12 08:28:04.030  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2020-11-12 08:28:04.044  INFO 5160 --- [main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-11-12 08:28:04.060  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1605149884058 with initial instances count: 1
+2020-11-12 08:28:04.073  INFO 5160 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application BOOKINGMS with eureka with status UP
+2020-11-12 08:28:04.075  INFO 5160 --- [main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1605149884075, current=UP, previous=STARTING]
+2020-11-12 08:28:04.080  INFO 5160 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOKINGMS/192.168.43.44:BookingMs:8002: registering service...
+2020-11-12 08:28:04.293  INFO 5160 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8002 (http) with context path ''
+2020-11-12 08:28:04.303  INFO 5160 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8002
+2020-11-12 08:28:04.338  INFO 5160 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-11-12 08:28:04.419  INFO 5160 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_BOOKINGMS/192.168.43.44:BookingMs:8002 - registration status: 204
+2020-11-12 08:28:06.859  INFO 5160 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-11-12 08:28:06.912  INFO 5160 --- [main] com.infy.BookMs.BookinMsApplication      : Started BookinMsApplication in 33.205 seconds (JVM running for 35.001)
+2020-11-12 08:33:04.115  INFO 5160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-12 08:38:03.208  INFO 5160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-12 08:43:03.210  INFO 5160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2020-11-12 08:48:03.211  INFO 5160 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
